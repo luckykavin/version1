@@ -14,7 +14,7 @@ const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 const slides = document.querySelectorAll('.slide');
 const indicators = document.querySelectorAll('.indicator');
-const heroImage = document.querySelector('.hero-img.img-1');
+// const heroImage = document.querySelector('.hero-img.img-1');
 
 // Language System
 let currentLanguage = 'en';
@@ -180,27 +180,27 @@ let currentSlide = 0;
 // });
 
 // Indicator clicks
-indicators.forEach((indicator, index) => {
-    indicator.addEventListener('click', () => {
-        currentSlide = index;
-        showSlide(currentSlide);
-    });
-});
+// indicators.forEach((indicator, index) => {
+//     indicator.addEventListener('click', () => {
+//         currentSlide = index;
+//         showSlide(currentSlide);
+//     });
+// });
 
-// Show specific slide
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.classList.toggle('active', i === index);
-    });
+// // Show specific slide
+// function showSlide(index) {
+//     slides.forEach((slide, i) => {
+//         slide.classList.toggle('active', i === index);
+//     });
     
-    indicators.forEach((indicator, i) => {
-        indicator.classList.toggle('active', i === index);
-    });
+//     indicators.forEach((indicator, i) => {
+//         indicator.classList.toggle('active', i === index);
+//     });
     
-    // Update button states
-    prevBtn.disabled = index === 0;
-    nextBtn.disabled = index === slides.length - 1;
-}
+//     // Update button states
+//     prevBtn.disabled = index === 0;
+//     nextBtn.disabled = index === slides.length - 1;
+// }
 
 // Keyboard navigation
 document.addEventListener('keydown', (e) => {
