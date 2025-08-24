@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Seat - Advanced Military Game Development</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="logo.jpg" alt="TPLMNK Logo" class="logo-image">
+                    <span>𝐓𝐏𝐋𝐌𝐍𝐊</span>
+                </div>
+                <nav class="nav">
+                                            <button class="nav-btn active" data-tab="info">
+                            <i class="fas fa-home"></i>
+                            <span data-en="Home" data-fr="Accueil">Home</span>
+                        </button>
+                    <button class="nav-btn" data-tab="form">
+                        <i class="fas fa-edit"></i>
+                        <span data-en="Join Us" data-fr="Rejoignez-nous">Join Us</span>
+                    </button>
+                    <button class="nav-btn" data-tab="guidelines">
+                        <i class="fas fa-book"></i>
+                        <span data-en="Guidelines" data-fr="Directives">Guidelines</span>
+                    </button>
+                </nav>
+                
+                                        <!-- Mobile Navigation Button -->
+                        <button class="mobile-nav-btn" id="mobileNavBtn">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                
+                <!-- Mobile Navigation Dropdown -->
+                <div class="mobile-nav-dropdown" id="mobileNavDropdown">
+                                                <button class="mobile-nav-option" data-tab="info">
+                                <i class="fas fa-home"></i>
+                                <span data-en="Home" data-fr="Accueil">Home</span>
+                            </button>
+                    <button class="mobile-nav-option" data-tab="form">
+                        <i class="fas fa-edit"></i>
+                        <span data-en="Join Us" data-fr="Rejoignez-nous">Join Us</span>
+                    </button>
+                    <button class="mobile-nav-option" data-tab="guidelines">
+                        <i class="fas fa-book"></i>
+                        <span data-en="Guidelines" data-fr="Directives">Guidelines</span>
+                    </button>
+                </div>
+                <div class="language-selector">
+                    <button class="lang-btn" id="langToggle">
+                        <i class="fas fa-globe"></i>
+                        <span id="currentLang">EN</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <button class="lang-option" data-lang="en">
+                            <span>🇺🇸</span>
+                            English
+                        </button>
+                        <button class="lang-option" data-lang="fr">
+                            <span>🇫🇷</span>
+                            Français
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Information Tab -->
+            <div class="tab-content active" id="info">
+                <div class="hero-section">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="gradient-text" data-en="Advanced Military Game" data-fr="Jeu Militaire Avancé">Advanced Military Game</span>
+                            <br><span data-en="Development Team" data-fr="Équipe de Développement">Development Team</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            <span data-en="Join our mission to create the next generation of military gaming experiences. We're looking for passionate developers to help build something extraordinary." data-fr="Rejoignez notre mission pour créer la prochaine génération d'expériences de jeux militaires. Nous recherchons des développeurs passionnés pour nous aider à construire quelque chose d'extraordinaire.">Join our mission to create the next generation of military gaming experiences. We're looking for passionate developers to help build something extraordinary.</span>
+                        </p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">17</span>
+                                <span class="stat-label" data-en="Years Old" data-fr="Ans">Years Old</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label" data-en="Possibilities" data-fr="Possibilités">Possibilities</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label" data-en="Dedication" data-fr="Dévouement">Dedication</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-images">
+                        <div class="image-grid">
+                            <img src="IMG_2997.webp" alt="Military Game Concept" class="hero-img img-1">
+                            <img src="IMG_3001.webp" alt="Game Development" class="hero-img img-2">
+                            <img src="IMG_3002.webp" alt="Team Collaboration" class="hero-img img-3">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-sections">
+                    <div class="info-card">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 data-en="Vision" data-fr="Vision">Vision</h3>
+                        <p data-en="Creating an immersive military gaming experience that pushes the boundaries of what's possible in the gaming industry." data-fr="Créer une expérience de jeu militaire immersive qui repousse les limites de ce qui est possible dans l'industrie du jeu.">Creating an immersive military gaming experience that pushes the boundaries of what's possible in the gaming industry.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 data-en="Team" data-fr="Équipe">Team</h3>
+                        <p data-en="We're assembling a diverse team of developers, designers, and creative minds who share our passion for excellence." data-fr="Nous assemblons une équipe diversifiée de développeurs, designers et esprits créatifs qui partagent notre passion pour l'excellence.">We're assembling a diverse team of developers, designers, and creative minds who share our passion for excellence.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 data-en="Technology" data-fr="Technologie">Technology</h3>
+                        <p data-en="Utilizing cutting-edge technologies and innovative approaches to deliver a gaming experience like no other." data-fr="Utiliser des technologies de pointe et des approches innovantes pour offrir une expérience de jeu unique.">Utilizing cutting-edge technologies and innovative approaches to deliver a gaming experience like no other.</p>
+                    </div>
+                                </div>
+                
+                <hr class="section-divider">
+                
+                <!-- Extended Information Sections -->
+                <div class="extended-info">
+                    <!-- Roadmap Section -->
+                    <div class="roadmap-section">
+                        <h2 class="section-title" data-en="Development Roadmap" data-fr="Feuille de Route de Développement">Development Roadmap</h2>
+                        <div class="roadmap-timeline">
+                            <div class="roadmap-item">
+                                <div class="roadmap-marker">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <div class="roadmap-content">
+                                    <h3 data-en="Phase 1: Foundation" data-fr="Phase 1 : Fondation">Phase 1: Foundation</h3>
+                                    <p data-en="Core engine development, basic gameplay mechanics, and team assembly. Setting up the technical foundation for our military game." data-fr="Développement du moteur principal, mécaniques de jeu de base et assemblage de l'équipe. Mise en place de la fondation technique pour notre jeu militaire.">Core engine development, basic gameplay mechanics, and team assembly. Setting up the technical foundation for our military game.</p>
+                                    <div class="roadmap-details">
+                                        <span class="timeline" data-en="Months 1-6" data-fr="Mois 1-6">Months 1-6</span>
+                                        <span class="status" data-en="In Progress" data-fr="En Cours">In Progress</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="roadmap-item">
+                                <div class="roadmap-marker">
+                                    <i class="fas fa-cog"></i>
+                                </div>
+                                <div class="roadmap-content">
+                                    <h3 data-en="Phase 2: Core Systems" data-fr="Phase 2 : Systèmes Principaux">Phase 2: Core Systems</h3>
+                                    <p data-en="Advanced AI systems, multiplayer infrastructure, and detailed asset creation. Building the backbone of our gaming experience." data-fr="Systèmes d'IA avancés, infrastructure multijoueur et création d'assets détaillés. Construction de l'épine dorsale de notre expérience de jeu.">Advanced AI systems, multiplayer infrastructure, and detailed asset creation. Building the backbone of our gaming experience.</p>
+                                    <div class="roadmap-details">
+                                        <span class="timeline" data-en="Months 7-12" data-fr="Mois 7-12">Months 7-12</span>
+                                        <span class="status" data-en="Planning" data-fr="Planification">Planning</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="roadmap-item">
+                                <div class="roadmap-marker">
+                                    <i class="fas fa-gamepad"></i>
+                                </div>
+                                <div class="roadmap-content">
+                                    <h3 data-en="Phase 3: Alpha Testing" data-fr="Phase 3 : Tests Alpha">Phase 3: Alpha Testing</h3>
+                                    <p data-en="Internal testing, gameplay refinement, and performance optimization. Preparing for closed beta with select community members." data-fr="Tests internes, affinement du gameplay et optimisation des performances. Préparation de la bêta fermée avec des membres sélectionnés de la communauté.">Internal testing, gameplay refinement, and performance optimization. Preparing for closed beta with select community members.</p>
+                                    <div class="roadmap-details">
+                                        <span class="timeline" data-en="Months 13-18" data-fr="Mois 13-18">Months 13-18</span>
+                                        <span class="status" data-en="Future" data-fr="Futur">Future</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="roadmap-item">
+                                <div class="roadmap-marker">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <div class="roadmap-content">
+                                    <h3 data-en="Phase 4: Launch" data-fr="Phase 4 : Lancement">Phase 4: Launch</h3>
+                                    <p data-en="Public beta release, community feedback integration, and final polish. Launching our military game to the world." data-fr="Sortie de la bêta publique, intégration des retours de la communauté et finition finale. Lancement de notre jeu militaire dans le monde.">Public beta release, community feedback integration, and final polish. Launching our military game to the world.</p>
+                                    <div class="roadmap-details">
+                                        <span class="timeline" data-en="Months 19-24" data-fr="Mois 19-24">Months 19-24</span>
+                                        <span class="status" data-en="Future" data-fr="Futur">Future</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                        </div>
+                    
+                    <hr class="section-divider">
+                    
+                    <!-- Career Opportunities Section -->
+                    <div class="career-section">
+                        <h2 class="section-title" data-en="Career Opportunities" data-fr="Opportunités de Carrière">Career Opportunities</h2>
+                        <div class="career-grid">
+                            <div class="career-card">
+                                <div class="career-icon">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <h3 data-en="Software Development" data-fr="Développement Logiciel">Software Development</h3>
+                                <ul class="career-list">
+                                    <li data-en="Game Engine Programming" data-fr="Programmation de Moteur de Jeu">Game Engine Programming</li>
+                                    <li data-en="AI & Machine Learning" data-fr="IA et Apprentissage Automatique">AI & Machine Learning</li>
+                                    <li data-en="Network & Multiplayer" data-fr="Réseau et Multijoueur">Network & Multiplayer</li>
+                                    <li data-en="Performance Optimization" data-fr="Optimisation des Performances">Performance Optimization</li>
+                                </ul>
+                                <div class="career-benefits">
+                                    <span class="benefit" data-en="Remote Work" data-fr="Travail à Distance">Remote Work</span>
+                                    <span class="benefit" data-en="Flexible Hours" data-fr="Heures Flexibles">Flexible Hours</span>
+                                </div>
+                            </div>
+                            
+                            <div class="career-card">
+                                <div class="career-icon">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <h3 data-en="Creative Design" data-fr="Design Créatif">Creative Design</h3>
+                                <ul class="career-list">
+                                    <li data-en="3D Modeling & Animation" data-fr="Modélisation 3D et Animation">3D Modeling & Animation</li>
+                                    <li data-en="UI/UX Design" data-fr="Design UI/UX">UI/UX Design</li>
+                                    <li data-en="Concept Art" data-fr="Art Conceptuel">Concept Art</li>
+                                    <li data-en="Sound Design" data-fr="Design Sonore">Sound Design</li>
+                                </ul>
+                                <div class="career-benefits">
+                                    <span class="benefit" data-en="Creative Freedom" data-fr="Liberté Créative">Creative Freedom</span>
+                                    <span class="benefit" data-en="Portfolio Building" data-fr="Construction de Portfolio">Portfolio Building</span>
+                                </div>
+                            </div>
+                            
+                            <div class="career-card">
+                                <div class="career-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h3 data-en="Project Management" data-fr="Gestion de Projet">Project Management</h3>
+                                <ul class="career-list">
+                                    <li data-en="Agile Development" data-fr="Développement Agile">Agile Development</li>
+                                    <li data-en="Team Coordination" data-fr="Coordination d'Équipe">Team Coordination</li>
+                                    <li data-en="Quality Assurance" data-fr="Assurance Qualité">Quality Assurance</li>
+                                    <li data-en="Release Planning" data-fr="Planification de Sortie">Release Planning</li>
+                                </ul>
+                                <div class="career-benefits">
+                                    <span class="benefit" data-en="Leadership Experience" data-fr="Expérience de Leadership">Leadership Experience</span>
+                                    <span class="benefit" data-en="Career Growth" data-fr="Croissance de Carrière">Career Growth</span>
+                                </div>
+                            </div>
+                        </div>
+                                        </div>
+                    
+                    <hr class="section-divider">
+                    
+                    <!-- Project Timeline Section -->
+                    <div class="timeline-section">
+                        <h2 class="section-title" data-en="Project Timeline" data-fr="Chronologie du Projet">Project Timeline</h2>
+                        <div class="timeline-container">
+                            <div class="timeline-item">
+                                <div class="timeline-date">
+                                    <span class="month" data-en="JAN" data-fr="JAN">JAN</span>
+                                    <span class="year">2024</span>
+                                </div>
+                                <div class="timeline-content">
+                                    <h3 data-en="Project Initiation" data-fr="Initiation du Projet">Project Initiation</h3>
+                                    <p data-en="Started conceptualizing the military game concept and began assembling the core team." data-fr="Commencé à conceptualiser le concept du jeu militaire et commencé à assembler l'équipe principale.">Started conceptualizing the military game concept and began assembling the core team.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">
+                                    <span class="month" data-en="MAR" data-fr="MAR">MAR</span>
+                                    <span class="year">2024</span>
+                                </div>
+                                <div class="timeline-content">
+                                    <h3 data-en="Team Assembly" data-fr="Assemblage de l'Équipe">Team Assembly</h3>
+                                    <p data-en="Recruiting developers and designers, setting up development environment and tools." data-fr="Recrutement de développeurs et designers, mise en place de l'environnement de développement et des outils.">Recruiting developers and designers, setting up development environment and tools.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">
+                                    <span class="month" data-en="JUN" data-fr="JUN">JUN</span>
+                                    <span class="year">2024</span>
+                                </div>
+                                <div class="timeline-content">
+                                    <h3 data-en="Development Start" data-fr="Début du Développement">Development Start</h3>
+                                    <p data-en="Begin core engine development and basic gameplay mechanics implementation." data-fr="Commencer le développement du moteur principal et l'implémentation des mécaniques de jeu de base.">Begin core engine development and basic gameplay mechanics implementation.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">
+                                    <span class="month" data-en="SEP" data-fr="SEP">SEP</span>
+                                    <span class="year">2024</span>
+                                </div>
+                                <div class="timeline-content">
+                                    <h3 data-en="First Prototype" data-fr="Premier Prototype">First Prototype</h3>
+                                    <p data-en="Complete basic prototype with core gameplay mechanics and visual elements." data-fr="Compléter le prototype de base avec les mécaniques de jeu principales et les éléments visuels.">Complete basic prototype with core gameplay mechanics and visual elements.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">
+                                    <span class="month" data-en="DEC" data-fr="DEC">DEC</span>
+                                    <span class="year">2024</span>
+                                </div>
+                                <div class="timeline-content">
+                                    <h3 data-en="Alpha Development" data-fr="Développement Alpha">Alpha Development</h3>
+                                    <p data-en="Advanced features implementation and internal testing phase begins." data-fr="Implémentation des fonctionnalités avancées et début de la phase de tests internes.">Advanced features implementation and internal testing phase begins.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Form Tab -->
+            <div class="tab-content" id="form">
+                <hr class="section-divider">
+                <div class="form-container">
+                    <h2 class="form-title" data-en="Join Our Development Team" data-fr="Rejoignez Notre Équipe de Développement">Join Our Development Team</h2>
+                    <p class="form-subtitle" data-en="Tell us about yourself and your skills" data-fr="Parlez-nous de vous et de vos compétences">Tell us about yourself and your skills</p>
+                    
+                    <form class="join-form" id="joinForm">
+                        <div class="form-group">
+                            <label for="name" data-en="Full Name" data-fr="Nom Complet">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" data-en="Email Address" data-fr="Adresse Email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="age" data-en="Age" data-fr="Âge">Age</label>
+                            <input type="number" id="age" name="age" min="16" max="100" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="role" data-en="Preferred Role" data-fr="Rôle Préféré">Preferred Role</label>
+                            <select id="role" name="role" required>
+                                <option value="" data-en="Select a role" data-fr="Sélectionnez un rôle">Select a role</option>
+                                <option value="frontend" data-en="Frontend Developer" data-fr="Développeur Frontend">Frontend Developer</option>
+                                <option value="backend" data-en="Backend Developer" data-fr="Développeur Backend">Backend Developer</option>
+                                <option value="game-dev" data-en="Game Developer" data-fr="Développeur de Jeu">Game Developer</option>
+                                <option value="ui-ux" data-en="UI/UX Designer" data-fr="Designer UI/UX">UI/UX Designer</option>
+                                <option value="3d-artist" data-en="3D Artist" data-fr="Artiste 3D">3D Artist</option>
+                                <option value="sound-designer" data-en="Sound Designer" data-fr="Designer Sonore">Sound Designer</option>
+                                <option value="project-manager" data-en="Project Manager" data-fr="Chef de Projet">Project Manager</option>
+                                <option value="other" data-en="Other" data-fr="Autre">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="experience" data-en="Years of Experience" data-fr="Années d'Expérience">Years of Experience</label>
+                            <select id="experience" name="experience" required>
+                                <option value="" data-en="Select experience level" data-fr="Sélectionnez le niveau d'expérience">Select experience level</option>
+                                <option value="0-1" data-en="0-1 years" data-fr="0-1 an">0-1 years</option>
+                                <option value="1-3" data-en="1-3 years" data-fr="1-3 ans">1-3 years</option>
+                                <option value="3-5" data-en="3-5 years" data-fr="3-5 ans">3-5 years</option>
+                                <option value="5+" data-en="5+ years" data-fr="5+ ans">5+ years</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="skills" data-en="Skills & Technologies" data-fr="Compétences et Technologies">Skills & Technologies</label>
+                            <textarea id="skills" name="skills" rows="4" data-en-placeholder="List your programming languages, frameworks, tools, and any relevant skills..." data-fr-placeholder="Listez vos langages de programmation, frameworks, outils et toutes compétences pertinentes..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="motivation" data-en="Why do you want to join?" data-fr="Pourquoi voulez-vous nous rejoindre ?">Why do you want to join?</label>
+                            <textarea id="motivation" name="motivation" rows="4" data-en-placeholder="Tell us what excites you about this project..." data-fr-placeholder="Dites-nous ce qui vous enthousiasme dans ce projet..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="portfolio" data-en="Portfolio/Projects Link (Optional)" data-fr="Lien Portfolio/Projets (Optionnel)">Portfolio/Projects Link (Optional)</label>
+                            <input type="url" id="portfolio" name="portfolio" data-en-placeholder="https://github.com/username or portfolio website" data-fr-placeholder="https://github.com/username ou site portfolio">
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            <span data-en="Submit Application" data-fr="Soumettre la Candidature">Submit Application</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Guidelines Tab -->
+            <div class="tab-content" id="guidelines">
+                <hr class="section-divider">
+                <div class="guidelines-container">
+                    <h2 class="guidelines-title" data-en="Development Guidelines" data-fr="Directives de Développement">Development Guidelines</h2>
+                    
+                    <div class="guidelines-section">
+                        <h3><i class="fas fa-code"></i> <span data-en="Code Standards" data-fr="Standards de Code">Code Standards</span></h3>
+                        <ul>
+                            <li data-en="Write clean, readable, and well-documented code" data-fr="Écrire du code propre, lisible et bien documenté">Write clean, readable, and well-documented code</li>
+                            <li data-en="Follow industry best practices and design patterns" data-fr="Suivre les meilleures pratiques de l'industrie et les modèles de conception">Follow industry best practices and design patterns</li>
+                            <li data-en="Use meaningful variable and function names" data-fr="Utiliser des noms de variables et de fonctions significatifs">Use meaningful variable and function names</li>
+                            <li data-en="Implement proper error handling and validation" data-fr="Implémenter une gestion d'erreur et une validation appropriées">Implement proper error handling and validation</li>
+                            <li data-en="Write unit tests for critical functionality" data-fr="Écrire des tests unitaires pour les fonctionnalités critiques">Write unit tests for critical functionality</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="guidelines-section">
+                        <h3><i class="fas fa-users"></i> <span data-en="Team Collaboration" data-fr="Collaboration d'Équipe">Team Collaboration</span></h3>
+                        <ul>
+                            <li data-en="Communicate clearly and regularly with team members" data-fr="Communiquer clairement et régulièrement avec les membres de l'équipe">Communicate clearly and regularly with team members</li>
+                            <li data-en="Use version control (Git) for all code changes" data-fr="Utiliser le contrôle de version (Git) pour tous les changements de code">Use version control (Git) for all code changes</li>
+                            <li data-en="Create descriptive commit messages" data-fr="Créer des messages de commit descriptifs">Create descriptive commit messages</li>
+                            <li data-en="Participate in code reviews and provide constructive feedback" data-fr="Participer aux revues de code et fournir des retours constructifs">Participate in code reviews and provide constructive feedback</li>
+                            <li data-en="Respect deadlines and communicate any blockers early" data-fr="Respecter les délais et communiquer tout blocage tôt">Respect deadlines and communicate any blockers early</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="guidelines-section">
+                        <h3><i class="fas fa-gamepad"></i> <span data-en="Game Development" data-fr="Développement de Jeu">Game Development</span></h3>
+                        <ul>
+                            <li data-en="Focus on performance optimization for smooth gameplay" data-fr="Se concentrer sur l'optimisation des performances pour un gameplay fluide">Focus on performance optimization for smooth gameplay</li>
+                            <li data-en="Implement responsive and intuitive user interfaces" data-fr="Implémenter des interfaces utilisateur réactives et intuitives">Implement responsive and intuitive user interfaces</li>
+                            <li data-en="Ensure cross-platform compatibility where applicable" data-fr="Assurer la compatibilité multi-plateforme quand c'est applicable">Ensure cross-platform compatibility where applicable</li>
+                            <li data-en="Prioritize user experience and accessibility" data-fr="Prioriser l'expérience utilisateur et l'accessibilité">Prioritize user experience and accessibility</li>
+                            <li data-en="Test thoroughly across different devices and scenarios" data-fr="Tester minutieusement sur différents appareils et scénarios">Test thoroughly across different devices and scenarios</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="guidelines-section">
+                        <h3><i class="fas fa-shield-alt"></i> <span data-en="Security & Quality" data-fr="Sécurité et Qualité">Security & Quality</span></h3>
+                        <ul>
+                            <li data-en="Follow security best practices for all implementations" data-fr="Suivre les meilleures pratiques de sécurité pour toutes les implémentations">Follow security best practices for all implementations</li>
+                            <li data-en="Validate and sanitize all user inputs" data-fr="Valider et assainir toutes les entrées utilisateur">Validate and sanitize all user inputs</li>
+                            <li data-en="Implement proper authentication and authorization" data-fr="Implémenter une authentification et une autorisation appropriées">Implement proper authentication and authorization</li>
+                            <li data-en="Regularly update dependencies and address vulnerabilities" data-fr="Mettre à jour régulièrement les dépendances et traiter les vulnérabilités">Regularly update dependencies and address vulnerabilities</li>
+                            <li data-en="Maintain high code quality and performance standards" data-fr="Maintenir des standards élevés de qualité et de performance du code">Maintain high code quality and performance standards</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="guidelines-section">
+                        <h3><i class="fas fa-lightbulb"></i> <span data-en="Innovation & Creativity" data-fr="Innovation et Créativité">Innovation & Creativity</span></h3>
+                        <ul>
+                            <li data-en="Think outside the box and propose innovative solutions" data-fr="Penser différemment et proposer des solutions innovantes">Think outside the box and propose innovative solutions</li>
+                            <li data-en="Stay updated with latest technologies and trends" data-fr="Rester à jour avec les dernières technologies et tendances">Stay updated with latest technologies and trends</li>
+                            <li data-en="Experiment with new approaches and techniques" data-fr="Expérimenter avec de nouvelles approches et techniques">Experiment with new approaches and techniques</li>
+                            <li data-en="Share knowledge and learn from team members" data-fr="Partager les connaissances et apprendre des membres de l'équipe">Share knowledge and learn from team members</li>
+                            <li data-en="Contribute to continuous improvement of processes" data-fr="Contribuer à l'amélioration continue des processus">Contribute to continuous improvement of processes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p><span data-en="&copy; 2025 𝐓𝐏𝐋𝐌𝐍𝐊. Building the future of Military Game." data-fr="&copy; 2024 𝐓𝐏𝐋𝐌𝐍𝐊. Construire l'avenir du jeu militaire.">&copy; 2024 𝐓𝐏𝐋𝐌𝐍𝐊. Building the future of military gaming.</span></p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Slideshow Modal -->
+    <div class="slideshow-modal" id="slideshowModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 data-en="Image Gallery" data-fr="Galerie d'Images">Image Gallery</h2>
+                <button class="modal-close" id="modalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="slideshow-container">
+                    <div class="slide active">
+                        <img src="img/1.jpg" alt="Military Image 1" class="slide-image">
+                    </div>
+                    <div class="slide">
+                        <img src="img/2.jpg" alt="Military Image 2" class="slide-image">
+                    </div>
+                    <div class="slide">
+                        <img src="img/3.jpg" alt="Military Image 3" class="slide-image">
+                    </div>
+                    <div class="slide">
+                        <img src="img/4.jpg" alt="Military Image 4" class="slide-image">
+                    </div>
+                    <div class="slide">
+                        <img src="img/5.jpg" alt="Military Image 5" class="slide-image">
+                    </div>
+                </div>
+                <div class="slideshow-controls">
+                    <button class="control-btn prev" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="slide-indicators">
+                        <span class="indicator active" data-slide="0"></span>
+                        <span class="indicator" data-slide="1"></span>
+                        <span class="indicator" data-slide="2"></span>
+                        <span class="indicator" data-slide="3"></span>
+                        <span class="indicator" data-slide="4"></span>
+                    </div>
+                    <button class="control-btn next" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
