@@ -147,37 +147,37 @@ document.addEventListener('click', (e) => {
 // Slideshow Functionality
 let currentSlide = 0;
 
-// Open slideshow modal when clicking on hero image
-heroImage.addEventListener('click', () => {
-    slideshowModal.classList.add('show');
-    document.body.style.overflow = 'hidden';
-    showSlide(currentSlide);
-});
+// // Open slideshow modal when clicking on hero image
+// heroImage.addEventListener('click', () => {
+//     slideshowModal.classList.add('show');
+//     document.body.style.overflow = 'hidden';
+//     showSlide(currentSlide);
+// });
 
-// Close modal
-modalClose.addEventListener('click', () => {
-    slideshowModal.classList.remove('show');
-    document.body.style.overflow = '';
-});
+// // Close modal
+// modalClose.addEventListener('click', () => {
+//     slideshowModal.classList.remove('show');
+//     document.body.style.overflow = '';
+// });
 
-// Close modal when clicking outside
-slideshowModal.addEventListener('click', (e) => {
-    if (e.target === slideshowModal) {
-        slideshowModal.classList.remove('show');
-        document.body.style.overflow = '';
-    }
-});
+// // Close modal when clicking outside
+// slideshowModal.addEventListener('click', (e) => {
+//     if (e.target === slideshowModal) {
+//         slideshowModal.classList.remove('show');
+//         document.body.style.overflow = '';
+//     }
+// });
 
-// Navigation buttons
-prevBtn.addEventListener('click', () => {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    showSlide(currentSlide);
-});
+// // Navigation buttons
+// prevBtn.addEventListener('click', () => {
+//     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+//     showSlide(currentSlide);
+// });
 
-nextBtn.addEventListener('click', () => {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-});
+// nextBtn.addEventListener('click', () => {
+//     currentSlide = (currentSlide + 1) % slides.length;
+//     showSlide(currentSlide);
+// });
 
 // Indicator clicks
 indicators.forEach((indicator, index) => {
