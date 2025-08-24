@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Seat - Advanced Military Game Development</title>
+    
+    <!-- Preload critical images -->
+    <link rel="preload" href="./logo.jpg" as="image" type="image/jpeg">
+    <link rel="preload" href="./IMG_2997.webp" as="image" type="image/webp">
+    <link rel="preload" href="./IMG_3001.webp" as="image" type="image/webp">
+    <link rel="preload" href="./IMG_3002.webp" as="image" type="image/webp">
+    
+    <!-- Prefetch slideshow images for better performance -->
+    <link rel="prefetch" href="img/1.jpg" as="image" type="image/jpeg">
+    <link rel="prefetch" href="img/2.jpg" as="image" type="image/jpeg">
+    <link rel="prefetch" href="img/3.jpg" as="image" type="image/jpeg">
+    
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -14,7 +26,7 @@
         <header class="header">
             <div class="header-content">
                 <div class="logo">
-                    <img src="./logo.jpg" alt="TPLMNK Logo" class="logo-image">
+                    <img src="./logo.jpg" alt="TPLMNK Logo" class="logo-image critical" loading="eager" decoding="sync">
                     <span>𝐓𝐏𝐋𝐌𝐍𝐊</span>
                 </div>
                 <nav class="nav">
@@ -102,9 +114,9 @@
                     </div>
                     <div class="hero-images">
                         <div class="image-grid">
-                            <img src="./IMG_2997.webp" alt="Military Game Concept" class="hero-img img-1">
-                            <img src="./IMG_3001.webp" alt="Game Development" class="hero-img img-2">
-                            <img src="./IMG_3002.webp" alt="Team Collaboration" class="hero-img img-3">
+                            <img src="./IMG_2997.webp" alt="Military Game Concept" class="hero-img img-1 critical" loading="eager" decoding="async">
+                            <img src="./IMG_3001.webp" alt="Game Development" class="hero-img img-2 critical" loading="eager" decoding="async">
+                            <img src="./IMG_3002.webp" alt="Team Collaboration" class="hero-img img-3 critical" loading="eager" decoding="async">
                         </div>
                     </div>
                 </div>
@@ -482,19 +494,19 @@
             <div class="modal-body">
                 <div class="slideshow-container">
                     <div class="slide active">
-                        <img src="img/1.jpg" alt="Military Image 1" class="slide-image">
+                        <img data-src="img/1.jpg" alt="Military Image 1" class="slide-image" loading="lazy" decoding="async">
                     </div>
                     <div class="slide">
-                        <img src="img/2.jpg" alt="Military Image 2" class="slide-image">
+                        <img data-src="img/2.jpg" alt="Military Image 2" class="slide-image" loading="lazy" decoding="async">
                     </div>
                     <div class="slide">
-                        <img src="img/3.jpg" alt="Military Image 3" class="slide-image">
+                        <img data-src="img/3.jpg" alt="Military Image 3" class="slide-image" loading="lazy" decoding="async">
                     </div>
                     <div class="slide">
-                        <img src="img/4.jpg" alt="Military Image 4" class="slide-image">
+                        <img data-src="img/4.jpg" alt="Military Image 4" class="slide-image" loading="lazy" decoding="async">
                     </div>
                     <div class="slide">
-                        <img src="img/5.jpg" alt="Military Image 5" class="slide-image">
+                        <img data-src="img/5.jpg" alt="Military Image 5" class="slide-image" loading="lazy" decoding="async">
                     </div>
                 </div>
                 <div class="slideshow-controls">
